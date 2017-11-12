@@ -1,12 +1,10 @@
 import cv2
 import numpy as np
 
-# create video capture
+# set the web-cam location
 cap = cv2.VideoCapture(0)
 height = 240
 width= 320
-
-
 cap.set(3,width)
 cap.set(4,height)
 
