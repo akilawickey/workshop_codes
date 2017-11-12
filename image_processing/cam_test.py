@@ -13,10 +13,8 @@ cap.set(4,height)
 # Loop to continuously get images
 while(1):
     # Read the frames frome a camera
-    _,frame = cap.read()
-    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-    
-    cv2.imshow('frame', hsv)
+    _,frame = cap.read()   
+    cv2.imshow('frame', frame)
 
     # if key pressed is 'Esc' then exit the loop
     if cv2.waitKey(33)== 27:
